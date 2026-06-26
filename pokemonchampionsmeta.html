@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Tam | Data Analyst Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===================== -->
+    <!-- Navigation -->
+    <!-- ===================== -->
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Jonathan Tam
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section id="projects">
+        
+        <h1> Pokmeon Champions Meta Analysis</h1>
+        <br>
+
+    <div>
+        <p>I have been playing Pokemon games since as far back as I remember: starting from Pokemon Yellow on the GameBoy, and ending on Pokemon Shield/Sword.
+            I have even taken part in online tournaments during Generation 8. Since then, life has gotten in the way with my joy of Dynamaxing, Pokemon breeding, 
+            and finding strategies against Trick Room Teams.
+            <br>
+            When the new Pokemon Champions game released in 2026, being more battle focused, I jumped straight back in with my old competitive-ready Pokemon. 
+            Seeing that it included in-game Battle Data, I conducted an analysis of the Pokemon Meta in this new official VGC format. 
+            I wanted to discover the new meta Pokemon that I have not seen as well as its movesets, in the hopes to build a anti-meta team to climb the ladder.
+        </p>
+        <br>
+        <h3>DATA COLLECTION</h3>
+        <br>
+        <p>
+            All data was collected from the in-game battle data for each season. This analysis is focused on Double Battles,
+            the official VGC format. Since this game does not have an API to gather this data, each data point was manually inserted into an excel sheet. No data 
+            cleaning or wrangling was needed.
+        </p>
+        <br>
+        <h3>POKEMON INTRODUCTION</h3>
+        <br>
+        <p>
+            To help understand the upcoming analysis, I first need to explain the fundamentals of Pokemon battling. In essence, each player brings out two Pokemon into battle.
+            For each turn, the player chooses a move the Pokemon will perform, usually a move that will damage the opposing Pokemon. The player that knockouts all your opponent's Pokemon
+            wins the battle. We will not get into the calculations of how much damage each move will do, there is an online calculator for that. What is important for this analysis,
+            is that a Pokemon's typing (Fire, Water, Grass, etc.) determine's their strength and weakness to a different type. It is a more convulated Rock, Paper, Scissors.
+            
+        </p>
+        <img src="images/Pokemon_Type_Chart.png" alt="Pokemon Type">
+        <p>
+            I first wanted to see the trend of the Pokemon ranks of each season, and the move types as well. This would help me determine which Pokemon type is strong
+            against the most common moves. For my move typing graph, I excluded Status (non-damaging) moves, and the move Fake-out. These two categories would have skewed
+            my results towards Normal type moves.
+        </p>
+        <br>
+        <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+        <tableau-viz id="tableauViz" src=https://public.tableau.com/views/PokemonChampionsMeta2/MasterDashboard
+                     toolbar="bottom" hide-tabs>
+        </tableau-viz>
+        <br>
+        <p>
+            The top 5 Pokemon in Season 2 are:
+            <br><br>
+                - Basculegion <br>
+                - Garchomp<br>
+                - Kingambit<br>
+                - Sneasler<br>
+                - Charizard<br>
+            <br>
+            Some notable increases are Whimsicott and Sylveon, while decreases are in Aerodactyl, Pelipper, Tyranitar and Blastoise.
+            <br>
+            We can safely imply that during Season 1, players have found a counter to Aerodactyl Tailwind, and thus need Whimsicott's ability, Prankster, to help set it up.
+            Sylveon, an already powerful Fairy-type, rose in popularity to help keep the ever-popular dragon Garchomp in check. 
+            
+        </p>
+    </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- Footer -->
+    <!-- ===================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Jonathan Tam. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

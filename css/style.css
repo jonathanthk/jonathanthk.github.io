@@ -23,19 +23,19 @@ header{
 }
 */
 .navbar{
-    max-width:1200px;
+    height: 50px;
     margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px;
+    padding:10px;
     background-color: #1D504F !important;
     font-family: Avenir Light, Garammond, Helvetica, sans-serif;
 }
 
 .logo a{
     text-decoration:none;
-    font-size:26px;
+    font-size:14px;
     font-weight:bold;
     color:#2563eb;
 }
@@ -44,20 +44,75 @@ header{
     display:flex;
     list-style:none;
     gap:35px;
+    font-size: 14px;
 }
 
 .nav-links a{
     text-decoration:none;
-    color:#333;
+    color:#FFF4F4;
     font-weight:600;
     transition:.3s;
 }
 
 .nav-links a:hover{
-    color:#1D504F;
+    color: #CBC3C3;
 }
 
-/* Prevent content hiding behind navbar */
+/* ---------------------------------------------PROJECT CARDS------------------------------------------*/
+
+.project-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin-top: 30px;
+    padding: 20px;
+
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.project-card img{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-info{
+    flex: 1;
+}
+
+.project-info h3{
+    margin-bottom: 15px;
+}
+
+.project-info p{
+    line-height: 1.6;
+}
+
+
+footer {
+    text-align: center;
+}
+
+/*---------------------------------------------------------LINKS----------------------------------------------*/
+
+.plain-text-link, 
+.plain-text-link:link, 
+.plain-text-link:visited, 
+.plain-text-link:hover, 
+.plain-text-link:active {
+  color: inherit;          /* Blends the color with surrounding text */
+  text-decoration: none;   /* Removes the default underline */
+  cursor: default;         /* Keeps the normal arrow cursor instead of a pointer hand */
+}
+
+.hidden-link {
+  color: inherit;            /* Uses the natural h3 text color */
+  text-decoration: none;     /* Removes the default underline */
+  cursor: default;           /* Changes pointer hand back to standard arrow cursor */
+}
 
 section{
     padding:100px 60px;
