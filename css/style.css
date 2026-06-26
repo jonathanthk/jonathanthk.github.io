@@ -7,11 +7,12 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Avenir Light, Garammond, Helvetica, sans-serif;
+    background-color: #FFF4F4 !important;
 }
 
 /* Navigation */
-
+/*
 header{
     position:fixed;
     top:0;
@@ -20,7 +21,7 @@ header{
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
     z-index:1000;
 }
-
+*/
 .navbar{
     max-width:1200px;
     margin:auto;
@@ -28,6 +29,8 @@ header{
     justify-content:space-between;
     align-items:center;
     padding:20px;
+    background-color: #1D504F !important;
+    font-family: Avenir Light, Garammond, Helvetica, sans-serif;
 }
 
 .logo a{
@@ -51,7 +54,7 @@ header{
 }
 
 .nav-links a:hover{
-    color:#2563eb;
+    color:#1D504F;
 }
 
 /* Prevent content hiding behind navbar */
