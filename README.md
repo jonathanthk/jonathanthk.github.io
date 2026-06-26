@@ -2,14 +2,11 @@
     <nav class="navbar">
         <div class="logo">
             <a href="#home">Jonathan Tam</a>
-        </div>
-
-        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
+        </div>
     </nav>
 </header>
 <body>
