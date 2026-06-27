@@ -7,12 +7,16 @@
 }
 
 body{
-    font-family:Avenir Light, Garammond, Helvetica, sans-serif;
+    font-family: Avenir Light, Garammond, Helvetica, sans-serif;
     background-color: #FFF4F4 !important;
+    display: grid;
+    align-items: center; 
+    padding-left: 25%;
+    padding-right: calc(25%);
 }
 
 /* Navigation */
-/*
+
 header{
     position:fixed;
     top:0;
@@ -21,7 +25,7 @@ header{
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
     z-index:1000;
 }
-*/
+
 .navbar{
     height: 50px;
     margin:auto;
