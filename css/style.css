@@ -6,6 +6,8 @@
     box-sizing:border-box;
 }
 
+/*------------------------------------------------BODY-------------------------------*/
+
 body{
     font-family: Avenir Light, Garammond, Helvetica, sans-serif;
     background-color: #FFF4F4 !important;
@@ -13,6 +15,12 @@ body{
     align-items: center; 
     padding-left: 25%;
     padding-right: calc(25%);
+}
+
+.container{
+    width:70%;
+    max-width:1200px;
+    margin:0 auto;
 }
 
 /* Navigation */
