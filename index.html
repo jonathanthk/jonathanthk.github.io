@@ -25,7 +25,6 @@
                 <ul class="nav-links">
                     <li><a href="#home">HOME</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="resume.html">RESUME</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
@@ -36,9 +35,6 @@
         <!-- ===================== -->
 
         <section id="home">
-
-            <h1>Jonathan Tam</h1>
-            <br>
             <h2>Data Analyst | Tableau Developer | Amateur Cook</h2>
             <br>
             <p>
@@ -49,10 +45,16 @@
                 <br>
                 Currently residing in Brisbane, Australia.
             </p>
+            <br>
+           <div class="button">
+                <a href="files/Jonathan_Tam_Resume.pdf" target="_blank" class="pdfbutton">
+                    View Resume
+                </a>
 
-            <p>
-                <button>View Resume</button>
-            </p>
+                <a href="files/Jonathan_Tam_Resume.pdf" download class="pdfbutton">
+                    Download Resume
+                </a>
+</div>
 
         </section>
 
@@ -91,15 +93,48 @@
         <!-- Contact -->
         <!-- ===================== -->
 
-        <section id="contact">
 
-            <h2>Contact</h2>
 
-            <p>Email: jonathanthk@gmail.com</p>
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Interested in working together? I'd love to hear from you.</p>
 
-            <p>ph: +6149219282</p>
+            <form class="contact-form" action="https://formsubmit.co/jonathanthk@gmail.com" method="POST">
 
+            <input type="hidden" name="_subject" value="New Portfolio Contact">
+            <input type="hidden" name="_captcha" value="false">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+            <input
+                type="text"
+                name="subject"
+                placeholder="Subject">
+
+            <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required></textarea>
+
+            <button type="submit" class="button">
+                Send Message
+            </button>
+                
+            </form>
         </section>
+
+    
 
         <!-- ===================== -->
         <!-- Footer -->
