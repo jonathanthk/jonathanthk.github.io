@@ -347,10 +347,6 @@ header{
     .tableauViz{
         height: 700px;
     }
-
-    .pdf-viewer{
-        height: 75vh;
-    }
 }
 
 @media (max-width: 520px){
@@ -419,9 +415,14 @@ header{
         max-width: 350px;
         font-size: 16px;
         padding: 14px 20px;
+        margin-bottom: 16px;
     }
     
-    @media (max-width:768px){
+    .pdfbutton:last-child{
+        margin-bottom: 0;
+    }
+    
+@media (max-width:768px){
 
     .contact{
         width:95%;
