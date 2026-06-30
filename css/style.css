@@ -92,7 +92,7 @@ button{
 
 .contact{
     width:min(900px,90%);
-    margin:0px auto;
+    margin: 0 auto;
     text-align:center;
 }
 
@@ -430,7 +430,7 @@ header{
 
     .contact{
         width:95%;
-        margin:60px auto;
+        margin: 0 auto;
     }
 
     .contact h2{
