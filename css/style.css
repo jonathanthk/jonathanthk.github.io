@@ -209,8 +209,23 @@ header{
     padding: 30px;
 
     border-radius: 16px;
-    background: #ffffff;
+    background: white;
     box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.project-card.reverse .project-image{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.project-card.reverse .project-info{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 16px 40px rgba(0,0,0,.15);
 }
 
 .project-card img{
@@ -339,6 +354,12 @@ header{
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 20px;
+    }
+    
+    .project-card.reverse .project-image,
+    .project-card.reverse .project-info{
+        grid-column:auto;
+        grid-row:auto;
     }
 
     .project-info p{
