@@ -234,6 +234,10 @@ header{
     font-size: 18px;
 }
 
+.project-right {
+    flex-direction: row-reverse;
+}
+
 
 /*------------------------------------------------MY PROJECTS PAGE----------------------------------------------*/
 .project-list{
