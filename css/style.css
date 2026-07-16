@@ -46,6 +46,10 @@ footer{
     text-align: center;
 }
 
+#home {
+    text-align: center;
+}
+
 button{
     padding: 12px 20px;
     border: 0;
