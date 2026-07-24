@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Tam | Data Analyst Portfolio</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    <main class="container">
+        <!-- ===================== -->
+        <!-- Navigation -->
+        <!-- ===================== -->
+
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    Jonathan Tam
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="../index.html#home">HOME</a></li>
+                    <li><a href="../projects.html">PROJECTS</a></li>
+                    <li><a href="../index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="navbar-break"></section>
+        
+        <section id="projects">
+
+            <h1>Pokmeon Champions M-B Meta Analysis</h1>
+            <br>
+
+        <div class="projects-main">
+            <p>
+                An update on the new season M-B of Pokemon Champions. There were a few Pokemon introduced this season that shaked up the meta, most notably: Raichu Y,
+                Swampert, and Staraptor. The analysis defined whether there were more Physical or Special Attackers, the Pokemon and Damage Move Typings, as well as
+                Held Item and Nature usages.
+            </p>
+            <br>
+            <h3>DATA COLLECTION</h3>
+            <br>
+            <p>
+                All data was collected from the in-game battle data for each season. This analysis is focused on Double Battles,
+                the official VGC format. Since this game does not have an API to gather this data, each data point was manually inserted into an excel sheet. No data 
+                cleaning or wrangling was needed.
+            </p>
+            <br>
+            
+        <div class="dashboard-container">
+                <tableau-viz class="tableauViz" src="https://public.tableau.com/views/PokemonChampions_S3Doubles/PokemonChampionsStory?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+                             toolbar="hidden" hide-tabs>
+                </tableau-viz>
+            </div>
+            
+        </div>
+            
+        </section>
+
+        <!-- ===================== -->
+        <!-- Footer -->
+        <!-- ===================== -->
+
+        <footer>
+
+            <p>
+                © 2026 Jonathan Tam. All rights reserved.
+            </p>
+
+        </footer>
+    </main>
+</body>
+
+</html>
